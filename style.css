@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: #fff;
+  font-size: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: "Inter";
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Inter";
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(244, 38%, 16%);
+  margin: 0 10%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: 5%;
+  max-width: 50%;
+}
+
+.card-text h2 {
+  padding-bottom: 30px;
+}
+
+.card-stats {
+  display: flex;
+  gap: 3rem;
+  padding-top: 15%;
+}
+
+.card-stats p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-img {
+  background: hsl(277, 64%, 61%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 769px) {
+  body {
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10% 8%;
+  }
+
+  .card-text {
+    padding: 5%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    padding-top: 20px;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 15%;
+  }
+
+  .card-stats p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
